@@ -32,3 +32,23 @@ This project demonstrates:
 
 ## 🧱 Project Structure
 
+Celo_Cookie_Clicker/
+│
+├── contracts/ # Smart contract (Solidity)
+├── deploy/ # Hardhat deployment script
+├── backend/ # Node.js API + Relayer
+├── frontend/ # Next.js app
+├── hardhat.config.ts # Hardhat setup for Celo
+├── README.md # This file
+└── package.json # Root config
+
+
+---
+
+## 🧠 How It Works
+
+1. User clicks the 🍪 button on the frontend or through a Farcaster Frame.  
+2. The click sends a request to the backend (`/frame/click`).  
+3. The **relayer** wallet signs a transaction calling `syncCookies()` on-chain.  
+4. The contract stores the total cookies per user.  
+5. The leaderboard updates live!
