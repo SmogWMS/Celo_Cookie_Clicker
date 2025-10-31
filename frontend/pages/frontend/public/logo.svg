@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <circle cx="64" cy="64" r="60" fill="#F8E4C3"/>
+
+  <!-- Cookie base -->
+  <circle cx="64" cy="64" r="38" fill="#E3B66C" stroke="#A6793D" stroke-width="3"/>
+
+  <!-- Bite effect -->
+  <path d="M102 60 C102 90 74 102 64 102 C64 94 68 86 74 80 C80 74 88 70 98 70 C101 68 102 66 102 60Z" fill="#F8E4C3"/>
+
+  <!-- Chocolate chips -->
+  <circle cx="50" cy="50" r="5" fill="#5C3B1E"/>
+  <circle cx="78" cy="54" r="4" fill="#5C3B1E"/>
+  <circle cx="60" cy="72" r="4" fill="#5C3B1E"/>
+  <circle cx="72" cy="86" r="5" fill="#5C3B1E"/>
+  <circle cx="84" cy="66" r="3" fill="#5C3B1E"/>
+
+  <!-- Text -->
+  <text x="64" y="122" text-anchor="middle" font-family="Arial" font-size="14" fill="#5C3B1E" font-weight="bold">
+    COOKIE CLICKER
+  </text>
+</svg>
