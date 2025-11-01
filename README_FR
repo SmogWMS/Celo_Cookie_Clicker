@@ -1,0 +1,51 @@
+🍪 Celo Cookie Clicker
+Celo Cookie Clicker est un jeu Web3 simple, fun et optimisé mobile, construit sur la blockchain Celo — intégré avec les Farcaster Frames pour pouvoir cliquer sur les cookies directement depuis ton feed Warpcast !
+
+🚀 Aperçu
+Les joueurs cliquent sur le cookie 🍪 pour gagner des points on-chain (“cookies”).
+Chaque clic est synchronisé via un relayer qui interagit avec le smart contract déployé sur Celo mainnet.
+
+Ce projet démontre :
+
+Des interactions Web3 simples on-chain.
+
+L’intégration d’un Farcaster Frame avec une expérience ludique.
+
+Un UX mobile minimaliste, optimisé pour des wallets comme Valora ou MetaMask.
+
+Développé avec Next.js, Tailwind, Hardhat, et Ethers.js.
+
+🧩 Stack Technique
+
+Layer	Tech
+Smart Contract	Solidity (Hardhat)
+Blockchain	Celo Mainnet
+Frontend	Next.js + TailwindCSS + RainbowKit
+Backend	Node.js (Express)
+Web3	Ethers.js
+Social	Farcaster Frames
+
+🧱 Structure du Projet
+
+Celo_Cookie_Clicker/
+│
+├── contracts/         # Smart contract (Solidity)
+├── deploy/            # Script de déploiement Hardhat
+├── backend/           # API Node.js + Relayer
+├── frontend/          # App Next.js
+├── hardhat.config.ts  # Config Hardhat pour Celo
+├── README.md          # Ce fichier
+└── package.json       # Config racine
+
+
+🧠 Comment ça marche
+
+L’utilisateur clique sur le bouton 🍪 dans le frontend ou via un Farcaster Frame.
+
+Le clic envoie une requête au backend (/frame/click).
+
+Le wallet du relayer signe une transaction appelant syncCookies() on-chain.
+
+Le smart contract enregistre le total de cookies par utilisateur.
+
+Le leaderboard se met à jour en live !
